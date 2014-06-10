@@ -5,11 +5,17 @@
 /*
 
 Plugin Name:  Lyons-Barton Family History and Genealogy Pedigree Chart
+
 Plugin URI: http://lyons-barton.com/wdl-pedigree-chart
+
 Description: Add Pedigree charts, Sibling, Spouse and Children lists to your website 
+
 Version: 1.0.0
+
 Author: Warwick Lyons
+
 Author URI: http://lyons-barton.com
+
 License: © Copyright 2013. All Rights Reserved
 */
 
