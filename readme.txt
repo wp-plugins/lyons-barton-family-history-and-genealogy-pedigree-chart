@@ -60,48 +60,8 @@ Or
 
 == Frequently Asked Questions ==
 
-**How do I start a Family Tree**
+For FAQ's please visit the <a href="http://lyons-barton.com/wordpress-genealogy-plugin-lb-pedigree-chart/#faq">Plugin Website</a>
 
-Starting a tree with LB Pedigree Chart is extremely simple.
-
-*   Click the Start New Family link under the Pedigree Chart Menu on your admin dashboard
-*   Fill in the requested details on the the form that appears
-*   Click Submit.
-
-Thats It! You have now created the base person for your new tree
-
-
-**How Do I Add New Family Member**
-
-
-To add a New Family Member
-
-
-
-*   Select the Add New Member Menu Option from the Pedigree Chart Menu on Admin Dashboard
-*   Select the Child member whose Father or Mother you are adding
-*   Select whether the New Member is the Father or Mother
-*   Fill in the appropriate information
-*   Click the Submit button
-*   You will be then taken to the Family Member list were you can select to view any members Post
-
-**How do I install the full version of WordPress Genealogy Plugin?**
-
-(The Lite Version is the same except for the first two steps where you obtain the WordPress Genealogy Plugin from the WordPress Website)
-
-*   Purchase the full version of the WordPress Genealogy Plugin
-*   Download the plugin to your local Machine
-*   Login to the WordPress admin area
-*   Go to the Plugins/Installed Plugins page within WordPress admin area
-*   Deactivate the current LB Family History and Genealogy Pedigree Chart Plugin
-*   Click the Add New Button at the top of the Plugins Page
-*   In the menu options that appear Click the Upload link
-*   Click the Choose file button and browse to where you downloaded the LB Genealogy and Family History Pedigree Chart zip file, Select it and then Click the Open Button
-*   Click the Install Now Button
-*   Once the Plugin has installed Click the Activate Now Button
-*   The Pedigree Chart Menu should now appear Menu Sytem
-
-For further FAQ's please visit the <a href="http://lyons-barton.com/wordpress-genealogy-plugin-lb-pedigree-chart/#faq">Plugin Website</a>
 
 == Screenshots ==
 1. To Start a New Branch of the Family:
