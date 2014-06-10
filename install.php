@@ -4222,7 +4222,7 @@ function faqs () {
     <br />
     <br />
     <br />
-    <h2>WDL Family History and Genealogy Pedigree Chart</h2>
+    <h2>Lyons-Barton Family History and Genealogy Pedigree Chart</h2>
     <p> Thankyou for Trying out the Lyons-Barton Genealogy and Family History Pedigree Chart</p>
 
     <br />
@@ -4257,7 +4257,7 @@ function faqs () {
     <p> c) Login to the WordPress admin area</p>
     <p> d) Go to the Plugins/Installed Plugins page within WordPress admin area
     </p>
-    <p>e) Deactivate the current WDL Family History and Genealogy Pedigree Chart Plugin
+    <p>e) Deactivate the current Lyons-Barton Family History and Genealogy Pedigree Chart Plugin
     </p>
     <p>f) Click the Add New Button at the top of the Plugins Page</p>
     <p> g) In the menu options that appear Click the Upload link
