@@ -16,7 +16,7 @@ Author: Warwick Lyons
 
 Author URI: http://lyons-barton.com
 
-License: © Copyright 2013. All Rights Reserved
+License: © Copyright 2014. All Rights Reserved
 */
 
 
