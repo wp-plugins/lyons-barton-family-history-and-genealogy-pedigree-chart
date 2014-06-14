@@ -4,13 +4,13 @@
 
 /*
 
-Plugin Name:  Lyons-Barton Family History and Genealogy Pedigree Chart
+Plugin Name:  WDL Family History and Genealogy Pedigree Chart
 
 Plugin URI: http://lyons-barton.com/wdl-pedigree-chart
 
 Description: Add Pedigree charts, Sibling, Spouse and Children lists to your website 
 
-Version: 1.0.0
+Version: 1.0.1
 
 Author: Warwick Lyons
 
@@ -1496,7 +1496,7 @@ define( 'MYPLUGINNAME_PATH', plugin_dir_url(__FILE__));
 $path = MYPLUGINNAME_PATH;
 
 
-    add_menu_page( 'Pedigree Chart', 'Pedigree Chart', 'manage_options', 'wdl-familytree-top-menu', 'create_main_menu',  $path.'/images/lb-logo.gif');
+    add_menu_page( 'Pedigree Chart', 'Pedigree Chart', 'manage_options', 'wdl-familytree-top-menu', 'create_main_menu',  $path.'/images/wdl-logo.gif');
 	
 // Stop Top Admin Menufrom appearing as a submenu
 	
@@ -1573,8 +1573,8 @@ function create_main_menu () {
 <!-- Create the main menu page -->
 <div class="wrap">
     <?php screen_icon();?>
-    <h2>Lyons-Barton Family History Plugins</h2>
-    <p> Thankyou for choosing Lyons-Barton Family History</p>
+    <h2>WDL Family History Plugins</h2>
+    <p> Thankyou for choosing WDL Family History</p>
 
     <br />
     <br />
@@ -1623,7 +1623,7 @@ function create_main_menu () {
 function start_new_family_page () {
 ?>
 <div class="wrap">
-<h2>Lyons-Barton Pedigree Chart - Start A New Family</h2>
+<h2>WDL Pedigree Chart - Start A New Family</h2>
     <p>From this page you will be able to start a New Family in your family tree</p>
     <p>Enter the First Person in the Family Tree</p>
 <br />
@@ -1934,7 +1934,7 @@ global $wpdb;
 	}
 
 ?> 
-    <h2>Lyons-Barton Pedigree Chart - Add New Family Member</h2>
+    <h2>WDL Pedigree Chart - Add New Family Member</h2>
     <p>From this page you will be able to add a New Family Members to your family tres</p>
     <p>&nbsp;</p>
 <br />
@@ -2312,7 +2312,7 @@ include ('tablename.php');
 	}
 
 ?> 
-    <h2>Lyons-Barton Pedigree Chart - Add Spouse</h2>
+    <h2>WDL Pedigree Chart - Add Spouse</h2>
     <p>From this page you will be able to add a New Family Members to your family trees</p>
     <p>&nbsp;</p>
 <br />
@@ -2554,12 +2554,12 @@ function connect_links () {
     <br />
     <br />
     <br />
-    <h2>Lyons-Barton Family History and Genealogy Pedigree Chart</h2>
-    <p> Thankyou for Trying out the Lyons-Barton Genealogy and Family History Pedigree Chart</p>
+    <h2>WDL Family History and Genealogy Pedigree Chart</h2>
+    <p> Thankyou for Trying out the WDL Genealogy and Family History Pedigree Chart</p>
 
     <br />
     <br />
-    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of Lyons-Barton Pedigree Chart for only $15.99 AUD</p> 
+    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of WDL Pedigree Chart for only $15.99 AUD</p> 
     <br />
 	
     <p> The Full version offers everything you see here but with:</p>
@@ -2577,7 +2577,7 @@ function connect_links () {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of Lyons-Barton Pedigree Chart has to offer</a>
+    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -2626,7 +2626,7 @@ function view_family_member () {
 
 <div class="wrap">
 
-    <h2>Lyons-Barton Pedigree Chart - View Family Members</h2>
+    <h2>WDL Pedigree Chart - View Family Members</h2>
     <p>From this page you will be able to view your Family Members</p>
     
     <p>&nbsp;</p>
@@ -2742,7 +2742,7 @@ function view_a_spouse () {
 
 <div class="wrap">
 
-    <h2>Lyons-Barton Pedigree Chart - View Spouse</h2>
+    <h2>WDL Pedigree Chart - View Spouse</h2>
     <p>From this page you will be able to edit and delete Family Members</p>
     
     <p>&nbsp;</p>
@@ -2899,12 +2899,12 @@ function edit_person() {
     <br />
     <br />
     <br />
-    <h2>Lyons-Barton Family History and Genealogy Pedigree Chart</h2>
-    <p> Thankyou for Trying out the Lyons-Barton Genealogy and Family History Pedigree Chart</p>
+    <h2>WDL Family History and Genealogy Pedigree Chart</h2>
+    <p> Thankyou for Trying out the WDL Genealogy and Family History Pedigree Chart</p>
 
     <br />
     <br />
-    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of Lyons-Barton Pedigree Chart for only $15.99 AUD</p> 
+    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of WDL Pedigree Chart for only $15.99 AUD</p> 
     <br />
 	
     <p> The Full version offers everything you see here but with:</p>
@@ -2922,7 +2922,7 @@ function edit_person() {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of Lyons-Barton Pedigree Chart has to offer</a>
+    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -2979,12 +2979,12 @@ function edit_marriage_date () {
     <br />
     <br />
     <br />
-    <h2>Lyons-Barton Family History and Genealogy Pedigree Chart</h2>
-    <p> Thankyou for Trying out the Lyons-Barton Genealogy and Family History Pedigree Chart</p>
+    <h2>WDL Family History and Genealogy Pedigree Chart</h2>
+    <p> Thankyou for Trying out the WDL Genealogy and Family History Pedigree Chart</p>
 
     <br />
     <br />
-    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of Lyons-Barton Pedigree Chart for only $15.99 AUD</p> 
+    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of WDL Pedigree Chart for only $15.99 AUD</p> 
     <br />
 	
     <p> The Full version offers everything you see here but with:</p>
@@ -3002,7 +3002,7 @@ function edit_marriage_date () {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of Lyons-Barton Pedigree Chart has to offer</a>
+    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -3059,12 +3059,12 @@ function delete_person () {
     <br />
     <br />
     <br />
-    <h2>Lyons-Barton Family History and Genealogy Pedigree Chart</h2>
-    <p> Thankyou for Trying out the Lyons-Barton Genealogy and Family History Pedigree Chart</p>
+    <h2>WDL Family History and Genealogy Pedigree Chart</h2>
+    <p> Thankyou for Trying out the WDL Genealogy and Family History Pedigree Chart</p>
 
     <br />
     <br />
-    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of Lyons-Barton Pedigree Chart for only $15.99 AUD</p> 
+    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of WDL Pedigree Chart for only $15.99 AUD</p> 
     <br />
 	
     <p> The Full version offers everything you see here but with:</p>
@@ -3082,7 +3082,7 @@ function delete_person () {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of Lyons-Barton Pedigree Chart has to offer</a>
+    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -3137,12 +3137,12 @@ function delete_marriage_data () {
     <br />
     <br />
     <br />
-    <h2>Lyons-Barton Family History and Genealogy Pedigree Chart</h2>
-    <p> Thankyou for Trying out the Lyons-Barton Genealogy and Family History Pedigree Chart</p>
+    <h2>WDL Family History and Genealogy Pedigree Chart</h2>
+    <p> Thankyou for Trying out the WDL Genealogy and Family History Pedigree Chart</p>
 
     <br />
     <br />
-    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of Lyons-Barton Pedigree Chart for only $15.99 AUD</p> 
+    <p>This Link has been deactivated in the Limited Version. <br /><br />Please Purchase the Full Version of WDL Pedigree Chart for only $15.99 AUD</p> 
     <br />
 	
     <p> The Full version offers everything you see here but with:</p>
@@ -3160,7 +3160,7 @@ function delete_marriage_data () {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of Lyons-Barton Pedigree Chart has to offer</a>
+    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -3202,7 +3202,7 @@ function change_look () {
 
 ?>
 <div class="wrap">
-<h2>Lyons-Barton Pedigree Chart - Change the Look and Feel</h2>
+<h2>WDL Pedigree Chart - Change the Look and Feel</h2>
     <p>From this page you will be able to change the look and feel of your site</p><br />
     
 
@@ -4222,8 +4222,8 @@ function faqs () {
     <br />
     <br />
     <br />
-    <h2>Lyons-Barton Family History and Genealogy Pedigree Chart</h2>
-    <p> Thankyou for Trying out the Lyons-Barton Genealogy and Family History Pedigree Chart</p>
+    <h2>WDL Family History and Genealogy Pedigree Chart</h2>
+    <p> Thankyou for Trying out the WDL Genealogy and Family History Pedigree Chart</p>
 
     <br />
     <br />
@@ -4257,7 +4257,7 @@ function faqs () {
     <p> c) Login to the WordPress admin area</p>
     <p> d) Go to the Plugins/Installed Plugins page within WordPress admin area
     </p>
-    <p>e) Deactivate the current Lyons-Barton Family History and Genealogy Pedigree Chart Plugin
+    <p>e) Deactivate the current WDL Family History and Genealogy Pedigree Chart Plugin
     </p>
     <p>f) Click the Add New Button at the top of the Plugins Page</p>
     <p> g) In the menu options that appear Click the Upload link
