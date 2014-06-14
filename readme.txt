@@ -1,4 +1,4 @@
-=== Lyons-Barton Family History and Genealogy Pedigree Chart ===
+=== WDL Family History and Genealogy Pedigree Chart ===
 Contributors: wdlyons 
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NRKB9T
 Tags: Family History, Genealogy, Pedigree Chart
