@@ -1,6 +1,4 @@
-<?php ob_start();?>
-
-<?php 
+<?php ob_start();
 
 /*
 
@@ -10,7 +8,7 @@ Plugin URI: http://lyons-barton.com/wdl-pedigree-chart
 
 Description: Add Pedigree charts, Sibling, Spouse and Children lists to your website 
 
-Version: 1.0.1
+Version: 1.0.2
 
 Author: Warwick Lyons
 
@@ -112,7 +110,7 @@ ob_start();
 
 	<td><?php echo htmlspecialchars($result_menu->date_of_death);?></td>
 
-	<td><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($result_menu->post_id) ?>" target="blank">View Post</a></td>
+	<td><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($result_menu->post_id) ?>" target="blank">View Post</a></td>
 
 	</tr>
     
@@ -246,7 +244,7 @@ ob_start();
 
    ?><div class="wdl_family_name"><?php echo htmlspecialchars($family_name)?>
             </div> <!-- End of wdl_family_name div-->
-			<? }
+			<?php }
 
 
    
@@ -266,11 +264,11 @@ ob_start();
             ?>  <img src="<?php echo $plugin_url  ?>" width="150" height="200">
             
 	
-<?
+<?php
 } else {
 ?>
 <img src="<?php echo $profile_pic ?>" width="<?php echo $wdl_profile_image_width ?>" height="<?php echo $wdl_profile_image_height ?>">
-<?
+<?php
 };
 ?>
         </div><!-- End of wdl_profile_image div-->
@@ -432,7 +430,7 @@ ob_start();
 				<td ><?php echo htmlspecialchars($sibling->first_name);?></td>
    				<td><?php echo htmlspecialchars($sibling->family_name);?></td>
                 <td><?php echo htmlspecialchars($sibling->date_of_birth);?></td>
-				<td><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($sibling->post_id) ?>" target="blank">View Post</a></td>
+				<td><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($sibling->post_id) ?>" target="blank">View Post</a></td>
 		    	
                 </tr>
     
@@ -592,7 +590,7 @@ if ($children ==="yes") {
     
     <td><?php echo htmlspecialchars($result->date_of_birth);?></td>
 
-	<td><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($result->post_id) ?>" target="blank">View Post</a></td>
+	<td><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($result->post_id) ?>" target="blank">View Post</a></td>
 
 	</tr>
     
@@ -758,7 +756,7 @@ if ($have_spouse === "yes") {
 	
     <td ><?php echo htmlspecialchars($result->date_of_marriage);?></td>
 	
-    <td ><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($result->post_id); ?>" target="blank">View Post</a>
+    <td ><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($result->post_id); ?>" target="blank">View Post</a>
 
 	</tr>
     
@@ -896,7 +894,7 @@ include ('style_info.php');
 ?>
      
             
-	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($f_result->post_id) ?>"><?php echo htmlspecialchars($f_result->first_name)?></a></span><br /><span class="pers_family_name_text"><?php echo htmlspecialchars($f_result->family_name). "<br />";?></span>
+	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($f_result->post_id) ?>"><?php echo htmlspecialchars($f_result->first_name)?></a></span><br /><span class="pers_family_name_text"><?php echo htmlspecialchars($f_result->family_name). "<br />";?></span>
             
     <p>   
     
@@ -908,7 +906,7 @@ include ('style_info.php');
     
     </p>
     
-    <?
+    <?php
 	
 	}
 	
@@ -929,7 +927,7 @@ include ('style_info.php');
 
 ?>
             
-	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($m_result->post_id) ?>"><?php echo htmlspecialchars($m_result->first_name)?></a></span> <br /><span class="pers_family_name_text"><?php echo htmlspecialchars($m_result->family_name). "<br />";?></span>
+	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($m_result->post_id) ?>"><?php echo htmlspecialchars($m_result->first_name)?></a></span> <br /><span class="pers_family_name_text"><?php echo htmlspecialchars($m_result->family_name). "<br />";?></span>
             
     <p> 
     
@@ -941,7 +939,7 @@ include ('style_info.php');
     
     </p>
     
-    <?
+    <?php
 	
 	}
 	
@@ -965,7 +963,7 @@ include ('style_info.php');
 	if (isset($f_gf_result->post_id)) {
 ?>
             
-	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($f_gf_result->post_id) ?>"><?php echo htmlspecialchars($f_gf_result->first_name)?></a></span><br /> <span class="pers_family_name_text"><?php echo htmlspecialchars($f_gf_result->family_name). "<br />";?></a></span>
+	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($f_gf_result->post_id) ?>"><?php echo htmlspecialchars($f_gf_result->first_name)?></a></span><br /> <span class="pers_family_name_text"><?php echo htmlspecialchars($f_gf_result->family_name). "<br />";?></a></span>
             
     <p>  
     
@@ -977,7 +975,7 @@ include ('style_info.php');
     
     </p>
             
-     <?
+     <?php
 	 
 	}
 	
@@ -998,7 +996,7 @@ include ('style_info.php');
 
 ?>
             
-	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($f_gm_result->post_id) ?>"><?php echo htmlspecialchars($f_gm_result->first_name)?></a></span><br /><span class="pers_family_name_text"><?php echo htmlspecialchars($f_gm_result->family_name). "<br />";?></a></span>
+	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($f_gm_result->post_id) ?>"><?php echo htmlspecialchars($f_gm_result->first_name)?></a></span><br /><span class="pers_family_name_text"><?php echo htmlspecialchars($f_gm_result->family_name). "<br />";?></a></span>
             
     <p> 
     
@@ -1010,7 +1008,7 @@ include ('style_info.php');
     
     </p>
     
-	<?
+	<?php
 	
 	}
 	
@@ -1031,7 +1029,7 @@ include ('style_info.php');
 
 ?>
             
-	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($f_gfather_result->post_id) ?>"><?php echo htmlspecialchars($f_gfather_result->first_name)?></a></span><br /><span class="pers_family_name_text"><?php echo htmlspecialchars($f_gfather_result->family_name). "<br />";?></a></span>             
+	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($f_gfather_result->post_id) ?>"><?php echo htmlspecialchars($f_gfather_result->first_name)?></a></span><br /><span class="pers_family_name_text"><?php echo htmlspecialchars($f_gfather_result->family_name). "<br />";?></a></span>             
                    
     <p>
     
@@ -1043,7 +1041,7 @@ include ('style_info.php');
     
     </p>  
     
-    <?
+    <?php
 	
 	}
 	
@@ -1064,7 +1062,7 @@ include ('style_info.php');
 
 ?>
             
-	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($f_gmother_result->post_id) ?>"><?php echo htmlspecialchars($f_gmother_result->first_name)?></a></span><br /><span class="pers_family_name_text"><?php echo htmlspecialchars($f_gmother_result->family_name). "<br />";?></a></span>
+	<span class="pers_first_name_text"><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($f_gmother_result->post_id) ?>"><?php echo htmlspecialchars($f_gmother_result->first_name)?></a></span><br /><span class="pers_family_name_text"><?php echo htmlspecialchars($f_gmother_result->family_name). "<br />";?></a></span>
             
     <p><span class="pers_det_text">B: </span><?php echo htmlspecialchars($f_gmother_result->date_of_birth);?>
 			
@@ -1074,7 +1072,7 @@ include ('style_info.php');
     
     </p>
     
-    <?
+    <?php
 	
 	}
 	
@@ -2683,7 +2681,7 @@ $result = $wpdb->get_results( "SELECT id, first_name, family_name, date_of_birth
 	<td class="small"><?php echo htmlspecialchars($result->date_of_birth);?></td>
 	<td class="small"><?php echo htmlspecialchars($result->date_of_death);?></td>
 	<td class="small" ><?php echo htmlspecialchars($result->family_id);?></td>
-	<td class="small"><a href="<?php bloginfo('url'); ?>?p=<? echo htmlspecialchars($result->post_id); ?>" target="blank">View Post</a></td>
+	<td class="small"><a href="<?php bloginfo('url'); ?>?p=<?php echo htmlspecialchars($result->post_id); ?>" target="blank">View Post</a></td>
 	<td class="small"><a href="<?php echo $upload_dir['baseurl']."/".htmlspecialchars($result->image);?>" target="blank"><?php echo htmlspecialchars($result->image);?></a></td>
 
 	</tr>
@@ -3300,31 +3298,31 @@ include ('style_info.php');
      		<p class="form_look">	
           	Text Field Width
 			
-      		<input name="wdl_title_text_ft_width" type="text" id="wdl_title_text_ft_width" size="25" maxlength="40" value="<? echo htmlspecialchars($wdl_title_text_ft_width)?>"/>
+      		<input name="wdl_title_text_ft_width" type="text" id="wdl_title_text_ft_width" size="25" maxlength="40" value="<?php echo htmlspecialchars($wdl_title_text_ft_width)?>"/>
 			</p>
       		
             <p class="form_look">	
             Title Text Field Float
 			
-      		<input name="wdl_title_text_float" type="text" id="wdl_title_text_float" size="25" maxlength="5" value="<? echo htmlspecialchars($wdl_title_text_float)?>" />
+      		<input name="wdl_title_text_float" type="text" id="wdl_title_text_float" size="25" maxlength="5" value="<?php echo htmlspecialchars($wdl_title_text_float)?>" />
 			</p>
             
             <p class="form_look">	
             Title Text Padding Top
 			
-      		<input name="wdl_title_text_pd_top" type="text" id="wdl_title_text_pd_top" size="25" maxlength="5" value="<? echo htmlspecialchars($wdl_title_text_pd_top)?>" />
+      		<input name="wdl_title_text_pd_top" type="text" id="wdl_title_text_pd_top" size="25" maxlength="5" value="<?php echo htmlspecialchars($wdl_title_text_pd_top)?>" />
 			</p>
              
              <p class="form_look">	
             Title Text Padding Left
 			
-      		<input name="wdl_title_text_pd_left" type="text" id="wdl_title_text_pd_left" size="25" maxlength="5" value="<? echo htmlspecialchars($wdl_title_text_pd_left)?>" />
+      		<input name="wdl_title_text_pd_left" type="text" id="wdl_title_text_pd_left" size="25" maxlength="5" value="<?php echo htmlspecialchars($wdl_title_text_pd_left)?>" />
 			</p>
             
              <p class="form_look">	
             Title Text Padding Right
 			
-      		<input name="wdl_title_text_pd_right" type="text" id="wdl_title_text_pd_right" size="25" maxlength="5" value="<? echo htmlspecialchars($wdl_title_text_pd_right)?>" />
+      		<input name="wdl_title_text_pd_right" type="text" id="wdl_title_text_pd_right" size="25" maxlength="5" value="<?php echo htmlspecialchars($wdl_title_text_pd_right)?>" />
 			</p>
                   
           </fieldset>
@@ -3338,37 +3336,37 @@ include ('style_info.php');
      		<p class="form_look">	
           	Text Alignment
 			
-      		<input name="wdl_first_middle_names_ft_align" type="text" id="wdl_first_middle_names_ft_align" size="25" maxlength="40" value="<? echo htmlspecialchars($wdl_first_middle_names_ft_align)?>" />
+      		<input name="wdl_first_middle_names_ft_align" type="text" id="wdl_first_middle_names_ft_align" size="25" maxlength="40" value="<?php echo htmlspecialchars($wdl_first_middle_names_ft_align)?>" />
 			</p>
       		
             <p class="form_look">	
             Font Family
 			
-      		<input name="wdl_first_middle_names_ft_family" type="text" id="wdl_first_middle_names_ft_family" size="25" maxlength="40" value="<? echo htmlspecialchars($wdl_first_middle_names_ft_family)?>"/>
+      		<input name="wdl_first_middle_names_ft_family" type="text" id="wdl_first_middle_names_ft_family" size="25" maxlength="40" value="<?php echo htmlspecialchars($wdl_first_middle_names_ft_family)?>"/>
 			</p>
                   
             <p class="form_look">	
             Font Weight
 			
-      		<input name="wdl_first_middle_names_ft_weight" type="text" id="wdl_first_middle_names_ft_weight" size="25" maxlength="12" value="<? echo htmlspecialchars($wdl_first_middle_names_ft_weight)?>"/>
+      		<input name="wdl_first_middle_names_ft_weight" type="text" id="wdl_first_middle_names_ft_weight" size="25" maxlength="12" value="<?php echo htmlspecialchars($wdl_first_middle_names_ft_weight)?>"/>
 			</p>
             
             <p class="form_look">	
             Font Color
 			
-      		<input name="wdl_first_middle_names_ft_color" type="text" id="wdl_first_middle_names_ft_color" size="25" maxlength="7" value="<? echo htmlspecialchars($wdl_first_middle_names_ft_color)?>"/>
+      		<input name="wdl_first_middle_names_ft_color" type="text" id="wdl_first_middle_names_ft_color" size="25" maxlength="7" value="<?php echo htmlspecialchars($wdl_first_middle_names_ft_color)?>"/>
 			</p>
             
              <p class="form_look">	
             Font Size
 			
-      		<input name="wdl_first_middle_names_ft_size" type="text" id="wdl_first_middle_names_ft_size" size="25" maxlength="11" value="<? echo htmlspecialchars($wdl_first_middle_names_ft_size)?>"/>
+      		<input name="wdl_first_middle_names_ft_size" type="text" id="wdl_first_middle_names_ft_size" size="25" maxlength="11" value="<?php echo htmlspecialchars($wdl_first_middle_names_ft_size)?>"/>
 			</p>
             
             <p class="form_look">	
             Font Style
 			
-      		<input name="wdl_first_middle_names_ft_style" type="text" id="wdl_first_middle_names_ft_style" size="25" maxlength="7" value="<? echo htmlspecialchars($wdl_first_middle_names_ft_style)?>"/>
+      		<input name="wdl_first_middle_names_ft_style" type="text" id="wdl_first_middle_names_ft_style" size="25" maxlength="7" value="<?php echo htmlspecialchars($wdl_first_middle_names_ft_style)?>"/>
 			</p>
             
       </fieldset>
@@ -3379,56 +3377,56 @@ include ('style_info.php');
      		<p class="form_look">	
           	Text Alignment
 			
-      		<input name="wdl_family_name_ft_align" type="text" id="wdl_family_name_ft_align" size="25" maxlength="40" value="<? echo htmlspecialchars($wdl_family_name_ft_align)?>"/>
+      		<input name="wdl_family_name_ft_align" type="text" id="wdl_family_name_ft_align" size="25" maxlength="40" value="<?php echo htmlspecialchars($wdl_family_name_ft_align)?>"/>
 			</p>
       		
             <p class="form_look">	
             Font Family
 			
-      		<input name="wdl_family_name_ft_family" type="text" id="wdl_family_name_ft_family" size="25" maxlength="5" value="<? echo htmlspecialchars($wdl_family_name_ft_family)?>"/>
+      		<input name="wdl_family_name_ft_family" type="text" id="wdl_family_name_ft_family" size="25" maxlength="5" value="<?php echo htmlspecialchars($wdl_family_name_ft_family)?>"/>
 			</p>
                   
             
             <p class="form_look">	
             Font Weight
 			
-      		<input name="wdl_family_name_ft_weight" type="text" id="wdl_family_name_ft_weight" size="25" maxlength="7" value="<? echo htmlspecialchars($wdl_family_name_ft_weight)?>"/>
+      		<input name="wdl_family_name_ft_weight" type="text" id="wdl_family_name_ft_weight" size="25" maxlength="7" value="<?php echo htmlspecialchars($wdl_family_name_ft_weight)?>"/>
 			</p>
             
             <p class="form_look">	
             Font Color
 			
-      		<input name="wdl_family_name_ft_color" type="text" id="wdl_family_name_ft_color" size="25" maxlength="7" value="<? echo htmlspecialchars($wdl_family_name_ft_color)?>"/>
+      		<input name="wdl_family_name_ft_color" type="text" id="wdl_family_name_ft_color" size="25" maxlength="7" value="<?php echo htmlspecialchars($wdl_family_name_ft_color)?>"/>
 			</p>
             
                        <p class="form_look">	
             Font Size
 			
-      		<input name="wdl_family_name_ft_size" type="text" id="wdl_family_name_ft_size" size="25" maxlength="7" value="<? echo htmlspecialchars($wdl_family_name_ft_size)?>"/>
+      		<input name="wdl_family_name_ft_size" type="text" id="wdl_family_name_ft_size" size="25" maxlength="7" value="<?php echo htmlspecialchars($wdl_family_name_ft_size)?>"/>
 			</p>
             
             <p class="form_look">	
             Font Style
 			
-      		<input name="wdl_family_name_ft_style" type="text" id="wdl_family_name_ft_style" size="25" maxlength="7" value="<? echo htmlspecialchars($wdl_family_name_ft_style)?>"/>
+      		<input name="wdl_family_name_ft_style" type="text" id="wdl_family_name_ft_style" size="25" maxlength="7" value="<?php echo htmlspecialchars($wdl_family_name_ft_style)?>"/>
 			</p>
             
             <p class="form_look">	
             Font Transform
 			
-      		<input name="wdl_family_name_ft_transform" type="text" id="wdl_family_name_ft_transform" size="25" maxlength="11" value="<? echo htmlspecialchars($wdl_family_name_ft_transform)?>"/>
+      		<input name="wdl_family_name_ft_transform" type="text" id="wdl_family_name_ft_transform" size="25" maxlength="11" value="<?php echo htmlspecialchars($wdl_family_name_ft_transform)?>"/>
 			</p>
             
                         <p class="form_look">	
             Spacing Above Family Name
 			
-      		<input name="wdl_family_name_text_pd_top" type="text" id="wdl_family_name_text_pd_top" size="25" maxlength="11" value="<? echo htmlspecialchars($wdl_family_name_text_pd_top)?>"/>
+      		<input name="wdl_family_name_text_pd_top" type="text" id="wdl_family_name_text_pd_top" size="25" maxlength="11" value="<?php echo htmlspecialchars($wdl_family_name_text_pd_top)?>"/>
 			</p>
             
                         <p class="form_look">	
             Spacing Below Family Name
 			
-      		<input name="wdl_family_name_text_pd_bottom" type="text" id="wdl_family_name_text_pd_bottom" size="25" maxlength="11" value="<? echo htmlspecialchars($wdl_family_name_text_pd_bottom)?>"/>
+      		<input name="wdl_family_name_text_pd_bottom" type="text" id="wdl_family_name_text_pd_bottom" size="25" maxlength="11" value="<?php echo htmlspecialchars($wdl_family_name_text_pd_bottom)?>"/>
 			</p>
             
       </fieldset>
@@ -3449,7 +3447,7 @@ include ('style_info.php');
      		<p class="form_look">	
           	Font Align
 			
-      		<input name="wdl_dates_ft_align" type="text" id="wdl_dates_ft_align" size="25" maxlength="40"  value="<? echo htmlspecialchars($wdl_dates_ft_align)?>"/>
+      		<input name="wdl_dates_ft_align" type="text" id="wdl_dates_ft_align" size="25" maxlength="40"  value="<?php echo htmlspecialchars($wdl_dates_ft_align)?>"/>
 			</p>
             
       
@@ -3457,20 +3455,20 @@ include ('style_info.php');
             <p class="form_look">	
             Font Family
 			
-      		<input name="wdl_dates_ft_family" type="text" id="wdl_dates_ft_family" size="25" maxlength="5"  value="<? echo htmlspecialchars($wdl_dates_ft_family)?>"/>
+      		<input name="wdl_dates_ft_family" type="text" id="wdl_dates_ft_family" size="25" maxlength="5"  value="<?php echo htmlspecialchars($wdl_dates_ft_family)?>"/>
 			</p>
                   
             
             <p class="form_look">	
             Font Weight
 			
-      		<input name="wdl_dates_ft_weight" type="text" id="wdl_dates_ft_weight" size="25" maxlength="11"  value="<? echo htmlspecialchars($wdl_dates_ft_weight)?>"/>
+      		<input name="wdl_dates_ft_weight" type="text" id="wdl_dates_ft_weight" size="25" maxlength="11"  value="<?php echo htmlspecialchars($wdl_dates_ft_weight)?>"/>
 			</p>
             
             <p class="form_look">	
             Font Size
 			
-      		<input name="wdl_dates_ft_size" type="text" id="wdl_dates_ft_size" size="25" maxlength="15" value="<? echo htmlspecialchars($wdl_dates_ft_size)?>" />
+      		<input name="wdl_dates_ft_size" type="text" id="wdl_dates_ft_size" size="25" maxlength="15" value="<?php echo htmlspecialchars($wdl_dates_ft_size)?>" />
 			</p>
 </fieldset>
       
@@ -3480,28 +3478,28 @@ include ('style_info.php');
            
 <p class="form_look">	
             Profile Image Float
-      		<input name="wdl_profile_image_float" type="text" id="wdl_profile_image_float" size="25" maxlength="12" value="<? echo htmlspecialchars($wdl_profile_image_float)?>"/>
+      		<input name="wdl_profile_image_float" type="text" id="wdl_profile_image_float" size="25" maxlength="12" value="<?php echo htmlspecialchars($wdl_profile_image_float)?>"/>
 			</p>
 <p class="form_look">				
 			Profile Padding Left
-      		<input name="wdl_profile_image_pd_left" type="text" id="wdl_profile_image_pd_left" size="25" maxlength="12" value="<? echo htmlspecialchars($wdl_profile_image_pd_left)?>"/>
+      		<input name="wdl_profile_image_pd_left" type="text" id="wdl_profile_image_pd_left" size="25" maxlength="12" value="<?php echo htmlspecialchars($wdl_profile_image_pd_left)?>"/>
 			</p>
 <p class="form_look">				
 			Profile Padding Right
-      		<input name="wdl_profile_image_pd_right" type="text" id="wdl_profile_image_pd_right" size="25" maxlength="12" value="<? echo htmlspecialchars($wdl_profile_image_pd_right)?>"/>
+      		<input name="wdl_profile_image_pd_right" type="text" id="wdl_profile_image_pd_right" size="25" maxlength="12" value="<?php echo htmlspecialchars($wdl_profile_image_pd_right)?>"/>
 			</p>
 
           
 <p class="form_look">	
             Profile Image Width
-      		<input name="wdl_profile_image_width" type="text" id="wdl_profile_image_width" size="25" maxlength="12" value="<? echo htmlspecialchars($wdl_profile_image_width)?>"/>
+      		<input name="wdl_profile_image_width" type="text" id="wdl_profile_image_width" size="25" maxlength="12" value="<?php echo htmlspecialchars($wdl_profile_image_width)?>"/>
 			</p>
                   
             
             <p class="form_look">	
             Profile Image Height
 			
-      		<input name="wdl_profile_image_height" type="text" id="wdl_profile_image_height" size="25" maxlength="12" value="<? echo htmlspecialchars($wdl_profile_image_height)?>" />
+      		<input name="wdl_profile_image_height" type="text" id="wdl_profile_image_height" size="25" maxlength="12" value="<?php echo htmlspecialchars($wdl_profile_image_height)?>" />
 			</p>
  </fieldset>
   </div> <!-- End change_look_top_right div -->
@@ -3521,31 +3519,31 @@ include ('style_info.php');
      		<p class="form_look">	
           	Font
 			
-      		<input name="table_heading_ft_fam" type="text" id="table_heading_ft_fam" size="25" maxlength="40" value="<? echo htmlspecialchars($table_heading_ft_fam)?>"/>
+      		<input name="table_heading_ft_fam" type="text" id="table_heading_ft_fam" size="25" maxlength="40" value="<?php echo htmlspecialchars($table_heading_ft_fam)?>"/>
 			</p>
       		
             <p class="form_look">	
             Font Size
 			
-      		<input name="table_heading_ft_size" type="text" id="table_heading_ft_size" size="25" maxlength="5" value="<? echo htmlspecialchars($table_heading_ft_size)?>" />
+      		<input name="table_heading_ft_size" type="text" id="table_heading_ft_size" size="25" maxlength="5" value="<?php echo htmlspecialchars($table_heading_ft_size)?>" />
 			</p>
                   
             <p class="form_look">	
             Font Weight
 			
-      		<input name="table_heading_ft_wght" type="text" id="table_heading_ft_wght" size="25" maxlength="12" value="<? echo htmlspecialchars($table_heading_ft_wght)?>"/>
+      		<input name="table_heading_ft_wght" type="text" id="table_heading_ft_wght" size="25" maxlength="12" value="<?php echo htmlspecialchars($table_heading_ft_wght)?>"/>
 			</p>
             
             <p class="form_look">	
             Font Color
 		
-      		<input name="table_heading_ft_col" type="text" id="table_heading_ft_col" size="25" maxlength="7" value="<? echo htmlspecialchars($table_heading_ft_col)?>"/>
+      		<input name="table_heading_ft_col" type="text" id="table_heading_ft_col" size="25" maxlength="7" value="<?php echo htmlspecialchars($table_heading_ft_col)?>"/>
 			</p>
             
                         <p class="form_look">	
             Font Style
 		
-      		<input name="table_heading_ft_style" type="text" id="table_heading_ft_style" size="25" maxlength="7" value="<? echo htmlspecialchars($table_heading_ft_style)?>"/>
+      		<input name="table_heading_ft_style" type="text" id="table_heading_ft_style" size="25" maxlength="7" value="<?php echo htmlspecialchars($table_heading_ft_style)?>"/>
 			</p>
 
          </fieldset>
@@ -3559,37 +3557,37 @@ include ('style_info.php');
      		<p class="form_look">	
           	Font
 			
-      		<input name="tables_th_ft_fam" type="text" id="tables_th_ft_fam" size="25" maxlength="40" value="<? echo htmlspecialchars($tables_th_ft_fam)?>" />
+      		<input name="tables_th_ft_fam" type="text" id="tables_th_ft_fam" size="25" maxlength="40" value="<?php echo htmlspecialchars($tables_th_ft_fam)?>" />
 			</p>
       		
             <p class="form_look">	
             Font Size
 			
-      		<input name="tables_th_ft_size" type="text" id="tables_th_ft_size" size="25" maxlength="5" value="<? echo htmlspecialchars($tables_th_ft_size)?>"/>
+      		<input name="tables_th_ft_size" type="text" id="tables_th_ft_size" size="25" maxlength="5" value="<?php echo htmlspecialchars($tables_th_ft_size)?>"/>
 			</p>
                   
             <p class="form_look">	
             Font Weight
 			
-      		<input name="tables_th_ft_wght" type="text" id="tables_th_ft_wght" size="25" maxlength="12" value="<? echo htmlspecialchars($tables_th_ft_wght)?>"/>
+      		<input name="tables_th_ft_wght" type="text" id="tables_th_ft_wght" size="25" maxlength="12" value="<?php echo htmlspecialchars($tables_th_ft_wght)?>"/>
 			</p>
             
             <p class="form_look">	
             Font Color
 			
-      		<input name="tables_th_ft_col" type="text" id="tables_th_ft_col" size="25" maxlength="7" value="<? echo htmlspecialchars($tables_th_ft_col)?>"/>
+      		<input name="tables_th_ft_col" type="text" id="tables_th_ft_col" size="25" maxlength="7" value="<?php echo htmlspecialchars($tables_th_ft_col)?>"/>
 			</p>
             
              <p class="form_look">	
             Text Transform
 			
-      		<input name="tables_th_tx_trans" type="text" id="tables_th_tx_trans" size="25" maxlength="11" value="<? echo htmlspecialchars($tables_th_tx_trans)?>"/>
+      		<input name="tables_th_tx_trans" type="text" id="tables_th_tx_trans" size="25" maxlength="11" value="<?php echo htmlspecialchars($tables_th_tx_trans)?>"/>
 			</p>
             
             <p class="form_look">	
             Background Color
 			
-      		<input name="tables_th_bkgrd" type="text" id="tables_th_bkgrd" size="25" maxlength="7" value="<? echo htmlspecialchars($tables_th_bkgrd)?>"/>
+      		<input name="tables_th_bkgrd" type="text" id="tables_th_bkgrd" size="25" maxlength="7" value="<?php echo htmlspecialchars($tables_th_bkgrd)?>"/>
 			</p>
             
       </fieldset>
@@ -3600,32 +3598,32 @@ include ('style_info.php');
      		<p class="form_look">	
           	Font
 			
-      		<input name="tables_tr_ft_fam" type="text" id="tables_tr_ft_fam" size="25" maxlength="40" value="<? echo htmlspecialchars($tables_tr_ft_fam)?>"/>
+      		<input name="tables_tr_ft_fam" type="text" id="tables_tr_ft_fam" size="25" maxlength="40" value="<?php echo htmlspecialchars($tables_tr_ft_fam)?>"/>
 			</p>
       		
             <p class="form_look">	
             Font Size
 			
-      		<input name="tables_tr_ft_size" type="text" id="tables_tr_ft_size" size="25" maxlength="5" value="<? echo htmlspecialchars($tables_tr_ft_size)?>"/>
+      		<input name="tables_tr_ft_size" type="text" id="tables_tr_ft_size" size="25" maxlength="5" value="<?php echo htmlspecialchars($tables_tr_ft_size)?>"/>
 			</p>
                   
             
             <p class="form_look">	
             Font Color
 			
-      		<input name="tables_tr_ft_col" type="text" id="tables_tr_ft_col" size="25" maxlength="7" value="<? echo htmlspecialchars($tables_tr_ft_col)?>"/>
+      		<input name="tables_tr_ft_col" type="text" id="tables_tr_ft_col" size="25" maxlength="7" value="<?php echo htmlspecialchars($tables_tr_ft_col)?>"/>
 			</p>
             
             <p class="form_look">	
             Background Color
 			
-      		<input name="tables_tr_bkgrd" type="text" id="tables_tr_bkgrd" size="25" maxlength="7" value="<? echo htmlspecialchars($tables_tr_bkgrd)?>"/>
+      		<input name="tables_tr_bkgrd" type="text" id="tables_tr_bkgrd" size="25" maxlength="7" value="<?php echo htmlspecialchars($tables_tr_bkgrd)?>"/>
 			</p>
             
                        <p class="form_look">	
             Zebra Color
 			
-      		<input name="zebra_col" type="text" id="zebra_col" size="25" maxlength="7" value="<? echo htmlspecialchars($zebra_col)?>"/>
+      		<input name="zebra_col" type="text" id="zebra_col" size="25" maxlength="7" value="<?php echo htmlspecialchars($zebra_col)?>"/>
 			</p>
             
       </fieldset>
@@ -3643,19 +3641,19 @@ include ('style_info.php');
      		<p class="form_look">	
           	Table Width
 			
-      		<input name="sibling_tb_width" type="text" id="sibling_tb_width" size="25" maxlength="7" value="<? echo htmlspecialchars($sibling_tb_width)?>"/>
+      		<input name="sibling_tb_width" type="text" id="sibling_tb_width" size="25" maxlength="7" value="<?php echo htmlspecialchars($sibling_tb_width)?>"/>
 			</p>
       		
             <p class="form_look">	
             Margin Left
-      		<input name="sibling_tb_marg_left" type="text" id="sibling_tb_marg_left" size="25" maxlength="12" value="<? echo htmlspecialchars($sibling_tb_marg_left)?>"/>
+      		<input name="sibling_tb_marg_left" type="text" id="sibling_tb_marg_left" size="25" maxlength="12" value="<?php echo htmlspecialchars($sibling_tb_marg_left)?>"/>
 			</p>
                   
             
             <p class="form_look">	
             Margin Right
 			
-      		<input name="sibling_tb_marg_right" type="text" id="sibling_tb_marg_right" size="25" maxlength="12" value="<? echo htmlspecialchars($sibling_tb_marg_right)?>" />
+      		<input name="sibling_tb_marg_right" type="text" id="sibling_tb_marg_right" size="25" maxlength="12" value="<?php echo htmlspecialchars($sibling_tb_marg_right)?>" />
 			</p>
             
 <p class="form_subheading">Spouse Menu</p>
@@ -3664,19 +3662,19 @@ include ('style_info.php');
      		<p class="form_look">	
           	Table Width
 			
-      		<input name="spouse_tb_width" type="text" id="spouse_tb_width" size="25" maxlength="7" value="<? echo htmlspecialchars($spouse_tb_width)?>"/>
+      		<input name="spouse_tb_width" type="text" id="spouse_tb_width" size="25" maxlength="7" value="<?php echo htmlspecialchars($spouse_tb_width)?>"/>
 			</p>
       		
             <p class="form_look">	
             Margin Left
-      		<input name="spouse_tb_marg_left" type="text" id="spouse_tb_marg_left" size="25" maxlength="12" value="<? echo htmlspecialchars($spouse_tb_marg_left)?>"/>
+      		<input name="spouse_tb_marg_left" type="text" id="spouse_tb_marg_left" size="25" maxlength="12" value="<?php echo htmlspecialchars($spouse_tb_marg_left)?>"/>
 			</p>
                   
             
             <p class="form_look">	
             Margin Right
 			
-      		<input name="spouse_tb_marg_right" type="text" id="spouse_tb_marg_right" size="25" maxlength="12" value="<? echo htmlspecialchars($spouse_tb_marg_right)?>"/>
+      		<input name="spouse_tb_marg_right" type="text" id="spouse_tb_marg_right" size="25" maxlength="12" value="<?php echo htmlspecialchars($spouse_tb_marg_right)?>"/>
 			</p>
             
             <p class="form_subheading">Children Table</p>
@@ -3685,19 +3683,19 @@ include ('style_info.php');
      		<p class="form_look">	
           	Table Width
 			
-      		<input name="children_tb_width" type="text" id="children_tb_width" size="25" maxlength="7" value="<? echo htmlspecialchars($children_tb_width)?>"/>
+      		<input name="children_tb_width" type="text" id="children_tb_width" size="25" maxlength="7" value="<?php echo htmlspecialchars($children_tb_width)?>"/>
 			</p>
       		
             <p class="form_look">	
             Margin Left
-      		<input name="children_tb_marg_left" type="text" id="children_tb_marg_left" size="25" maxlength="12" value="<? echo htmlspecialchars($children_tb_marg_left)?>"/>
+      		<input name="children_tb_marg_left" type="text" id="children_tb_marg_left" size="25" maxlength="12" value="<?php echo htmlspecialchars($children_tb_marg_left)?>"/>
 			</p>
                   
             
             <p class="form_look">	
             Margin Right
 			
-      		<input name="children_tb_marg_right" type="text" id="children_tb_marg_right" size="25" maxlength="12" value="<? echo htmlspecialchars($children_tb_marg_right)?>" />
+      		<input name="children_tb_marg_right" type="text" id="children_tb_marg_right" size="25" maxlength="12" value="<?php echo htmlspecialchars($children_tb_marg_right)?>" />
 			</p>
             
       </fieldset>
@@ -3708,7 +3706,7 @@ include ('style_info.php');
      		<p class="form_look">	
           	Font
 			
-      		<input name="link_ft_fam" type="text" id="link_ ft_fam" size="25" maxlength="40"  value="<? echo htmlspecialchars($link_ft_fam)?>"/>
+      		<input name="link_ft_fam" type="text" id="link_ ft_fam" size="25" maxlength="40"  value="<?php echo htmlspecialchars($link_ft_fam)?>"/>
 			</p>
             
       
@@ -3716,32 +3714,32 @@ include ('style_info.php');
             <p class="form_look">	
             Font Size
 			
-      		<input name="link_ft_size" type="text" id="link_ ft_size" size="25" maxlength="5"  value="<? echo htmlspecialchars($link_ft_size)?>"/>
+      		<input name="link_ft_size" type="text" id="link_ ft_size" size="25" maxlength="5"  value="<?php echo htmlspecialchars($link_ft_size)?>"/>
 			</p>
                   
             
             <p class="form_look">	
             Font Style
 			
-      		<input name="link_ft_style" type="text" id="link_ ft_style" size="25" maxlength="11"  value="<? echo htmlspecialchars($link_ft_style)?>"/>
+      		<input name="link_ft_style" type="text" id="link_ ft_style" size="25" maxlength="11"  value="<?php echo htmlspecialchars($link_ft_style)?>"/>
 			</p>
             
             <p class="form_look">	
             Text Decoration
 			
-      		<input name="link_tx_dec" type="text" id="link_ tx_dec" size="25" maxlength="15" value="<? echo htmlspecialchars($link_tx_dec)?>" />
+      		<input name="link_tx_dec" type="text" id="link_ tx_dec" size="25" maxlength="15" value="<?php echo htmlspecialchars($link_tx_dec)?>" />
 			</p>
             
                 <p class="form_look">	
             Link Color
 			
-      		<input name="link_tx_col" type="text" id="link_tx_col" size="25" maxlength="7" value="<? echo htmlspecialchars($link_tx_col)?>" />
+      		<input name="link_tx_col" type="text" id="link_tx_col" size="25" maxlength="7" value="<?php echo htmlspecialchars($link_tx_col)?>" />
 			</p>
             
             <p class="form_look">	
             Link Hover
 			
-      		<input name="link_hov_col" type="text" id="link_hov_col" size="25" maxlength="7" value="<? echo htmlspecialchars($link_hov_col)?>" />
+      		<input name="link_hov_col" type="text" id="link_hov_col" size="25" maxlength="7" value="<?php echo htmlspecialchars($link_hov_col)?>" />
 			</p>
             
 
@@ -4179,7 +4177,7 @@ $wpdb->update($table_name3,
 <script>
 refreshPage();
 </script>
-<?
+<?php
 
 
 

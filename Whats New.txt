@@ -1,3 +1,6 @@
+Version 1.0.2
+*	Correction of php format to recrtify activation error
+
 Version 1.0.1
 
 *	Name Change from Lyons-Barton to WDL
