@@ -1,5 +1,5 @@
-Version 1.0.2
-*	Correction of php format to recrtify activation error
+Version 1.0.3
+*	Correction of php format to rectify activation error
 
 Version 1.0.1
 
