@@ -8,7 +8,7 @@ Plugin URI: http://lyons-barton.com/wdl-pedigree-chart
 
 Description: Add Pedigree charts, Sibling, Spouse and Children lists to your website 
 
-Version: 1.0.2
+Version: 1.0.3
 
 Author: Warwick Lyons
 
