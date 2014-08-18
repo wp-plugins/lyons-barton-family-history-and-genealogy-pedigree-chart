@@ -4,7 +4,7 @@
 
 Plugin Name:  WDL Family History and Genealogy Pedigree Chart
 
-Plugin URI: http://lyons-barton.com/wdl-pedigree-chart
+Plugin URI: http://www.warwicklyons.com.au/wordpress-family-history-plugin/
 
 Description: Add Pedigree charts, Sibling, Spouse and Children lists to your website 
 
@@ -12,7 +12,7 @@ Version: 1.0.3
 
 Author: Warwick Lyons
 
-Author URI: http://lyons-barton.com
+Author URI: http://warwicklyons.com.au
 
 License: © Copyright 2014. All Rights Reserved
 */
@@ -1578,7 +1578,7 @@ function create_main_menu () {
     <br />
     <p> If you like view more information or to view the Frequently asked Questions</p> 
     <br />
-	<a href="http://lyons-barton.com/wdl-pedigree-chart/"> More Information</a>
+	<a href="http://www.warwicklyons.com.au/wordpress-family-history-plugin/"> More Information</a>
 
 	<br />
     <br />
@@ -2575,7 +2575,7 @@ function connect_links () {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
+    <a href="http://www.warwicklyons.com.au/wordpress-family-history-plugin/" target="blank" alt="Full Version of WDL Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -2920,7 +2920,7 @@ function edit_person() {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
+    <a href="http://www.warwicklyons.com.au/wordpress-family-history-plugin/" target="blank" alt="Full Version of WDL Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -3000,7 +3000,7 @@ function edit_marriage_date () {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
+    <a href="http://www.warwicklyons.com.au/wordpress-family-history-plugin/" target="blank" alt="Full Version of  WDL Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -3080,7 +3080,7 @@ function delete_person () {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
+    <a href="http://www.warwicklyons.com.au/wordpress-family-history-plugin/" target="blank" alt="Full Version of WDL Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
@@ -3158,7 +3158,7 @@ function delete_marriage_data () {
 		<li>- Change the Color Properties.</li>
 		<li>- Remove the Three Generation Restriction</li>
 	</ul>
-    <a href="http://www.lyons-barton.com/wdl-pedigree-chart/" target="blank" alt="Full Version of Lyons-Barton Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
+    <a href="http://www.warwicklyons.com.au/wordpress-family-history-plugin/" target="blank" alt="Full Version of WDL Pedigree Chart" />See What the Full Version of WDL Pedigree Chart has to offer</a>
 
 	<br />
     <br />
