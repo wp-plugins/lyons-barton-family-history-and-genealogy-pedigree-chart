@@ -8,7 +8,7 @@ Plugin URI: http://www.warwicklyons.com.au/wordpress-family-history-plugin/
 
 Description: Add Pedigree charts, Sibling, Spouse and Children lists to your website 
 
-Version: 1.0.5
+Version: 1.0.6
 
 Author: Warwick Lyons
 
